@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =================general==================== */
+body {
+    line-height: 1;
+
+}
+*{
+    box-sizing: border-box;
+}
+.container  {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* .container-1 {
+    width: 1200;
+    margin: 0 auto;
+} */
+.clearfix::after,
+.clearfix::before   {
+    content: "";
+    display: table;
+}
+.clearfix::after    {
+    clear: both;
+}
+
+/* ================particulars====================== */
+
+/* ----------header------------- */
+.header-logo    {
+    float: left;
+}
+.header-menu    {
+    float: right;
+}
+
+.header-logo a,
+.header-menu a {
+    text-decoration
+    : none;
+    
+}
+.logo-hero {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.logo-subhero {
+    color: #727788;
+}
+.header-menu a {
+    color: #A1A6AD;
+}
+.header {
+    position: fixed;
+}
+.header-background {
+    background-color: #161C3E;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+       
+}
+
+/* ------hero------ */
+
+
+.background-image {
+    background: url(../media/images.jpeg) no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+.hero-text h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+.hero-text p {
+    color: #C2C6CA;
+    font-size: 22px;
+    text-align: center;
+    margin: 30px 0;
+}
+.hero-text a {
+    text-align: center;
+    display: block;
+}
+.btn-hero    {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #C2C6CA;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* ------------image section------------ */
+
+.image-background {
+    background-color: #1A2D3D;
+}
+.image-section-col1 {
+    float: left;
+    width: 50%;
+    line-height: 2;
+    
+}
+.image-section-col2 {
+    float: left;
+    width: 50%;
+    line-height: 2.9;
+}
+.image-section image {
+    width: 100%;
+}
+.image h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+}
+.para1 {
+    color: #C2C6CA;
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0;
+}
+.image-section-col1 p,
+.image-section-col2 p {
+    color: #C2C6CA;
+}
+
+/* ---------------video section------------ */
+
+.video-col {
+    float: left;
+    width: 25%;
+    
+}
+.video-image {
+    width: 100%;
+    
+}
+.background-video {
+    background-color: #16242A;
+}
+.videos h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+.videos p {
+    color: #C2C6CA;
+    font-size: 25px;
+    margin: 25px 0;
+}
+.btn {
+    margin: 10px 0;
+}
+.btn-background {
+    background-color: transparent;
+    color: #C2C6CA;
+    padding: 10px 20px;
+    border: 1px solid #C2C6CA;
+    border-radius: 8%;
+    color: #C2C6CA;
+}
+.btn-background-pink {
+    background-color: #AE5ECD;
+    padding: 10px 20px;
+    border: 1px solid #AE5ECD;
+    border-radius: 8%;
+    color: #FFFFFF;
+}
+
+/* -------------footer -------------------- */
+
+.footer-col {
+    float: left;
+    width: 33%;
+    padding: 50px 0;
+}
+.footer-background {
+    background-color: #020B12;
+}
+.footer-col h2 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer-col p {
+    color: #C2C6CA;
+    font-size: 20px;
+}
+.float-icons a {
+    color: #C1C7CD;
+    margin-left: 5px;
+    
+    
+}
+.float-icons {
+    text-align: center;
+    
+}
+.copy {
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    padding: 25px 0;
+}
